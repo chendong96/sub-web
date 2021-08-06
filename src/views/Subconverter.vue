@@ -256,20 +256,18 @@ export default {
         },
         customBackend: {
           "localhost:25500 本地版": "http://localhost:25500/sub?",
-          "pipidong.top": "https://pipidong.top/sub?",
+          "pipidong.vercel.app (pipidong提供) ": "https://pipidong.vercel.app/sub?",
           "subcon.dlj.tf(subconverter作者提供-稳定)":
             "https://subcon.dlj.tf/sub?",
           "api.dler.io(sub作者&lhie1提供-稳定)": "https://api.dler.io/sub?",
           "api.wcc.best(sub-web作者提供-稳定)": "https://api.wcc.best/sub?",
-          "sub.id9.cc(品云转换)": "https://sub.id9.cc/sub?",
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
-          { value: "https://pipidong.top/sub?" },
+          { value: "https://pipidong.vercel.app/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://api.dler.io/sub?" },
           { value: "https://api.wcc.best/sub?" },
-          { value: "https://sub.id9.cc/sub?" },
         ],
         remoteConfig: [
           {
@@ -553,7 +551,7 @@ export default {
   },
   mounted() {
     this.form.clientType = "clash";
-    this.form.customBackend = "https://pipidong.top/sub?";
+    this.form.customBackend = "https://pipidong.vercel.app/sub?";
     this.form.remoteConfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini";
     this.getBackendVersion();
   },
